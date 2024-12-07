@@ -62,4 +62,5 @@ in the github repo.
 * Then I configured the workflows [`ci.yml`](../.github/workflows/ci.yml), [`cd.yml`](../.github/workflows/cd.yml), 
 so that cd runs after ci, and the tests in the Makefile are performed during the workflows at the accurate stages.
 * When running the workflow for the first time, the URL asks for authentication, so it  needs to be updated so that 
-the delivery works as needed through Allow unauthenticated invocations
+the delivery works as needed through Allow unauthenticated invocations, in this case the URL 
+* is https://demo-1-684881852527.us-central1.run.app
