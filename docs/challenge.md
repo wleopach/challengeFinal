@@ -52,3 +52,12 @@ so I decided to change the [`test_model.py`](../tests/model/test_model.py) addin
 * Since I am using python3.12 locally, in order to dockerize the API I used python:3.12-slim as base image.
 * I built the image and stored it locally.
 * I updated the [`Dockerfile`](../Dockerfile) so that when I do docker run IMAGE_NAME the API is exposed on port 8080.
+
+# Configuring github actions for CI/CD
+
+* I created the folder .github/wokflows  mkdir -p .github/workflows && cp workflows/* .github/workflows/
+* I created a project on gcp and then generated a json key with the granted permissions to create 
+and deploy the api on GCP, using artifact registry and CLOUD RUN. I also added the key to secrets.GCP_CREDENTIALS
+in the github repo.
+* Then I configured the workflows [`ci.yml`](../.github/workflows/ci.yml), [`cd.yml`](../.github/workflows/cd.yml), 
+so that cd runs after ci   
