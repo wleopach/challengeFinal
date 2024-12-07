@@ -60,4 +60,6 @@ so I decided to change the [`test_model.py`](../tests/model/test_model.py) addin
 and deploy the api on GCP, using artifact registry and CLOUD RUN. I also added the key to secrets.GCP_CREDENTIALS
 in the github repo.
 * Then I configured the workflows [`ci.yml`](../.github/workflows/ci.yml), [`cd.yml`](../.github/workflows/cd.yml), 
-so that cd runs after ci   
+so that cd runs after ci, and the tests in the Makefile are performed during the workflows at the accurate stages.
+* When running the workflow for the first time, the URL asks for authentication, so it  needs to be updated so that 
+the delivery works as needed through Allow unauthenticated invocations
