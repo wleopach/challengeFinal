@@ -64,3 +64,9 @@ so that cd runs after ci, and the tests in the Makefile are performed during the
 * When running the workflow for the first time, the URL asks for authentication, so it  needs to be updated so that 
 the delivery works as needed through Allow unauthenticated invocations, in this case the URL 
 * is https://demo-1-684881852527.us-central1.run.app
+
+# Adding send script
+## Result
+Status Code: 200
+Response Text: {"status":"OK","detail":"your request was received"}
+Success: The response matches the expected result.
