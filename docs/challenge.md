@@ -38,3 +38,11 @@ so I decided to change the [`test_model.py`](../tests/model/test_model.py) addin
 * I also added a folder where a pretrained model is going to be stored, 
 * namely at [`model`](../model),
 * With this configurations all the 4 test passed locally
+
+
+# Api configuration for local testing
+
+## Schemas definition
+* In order to configure the api I defined the file [`schemas.py`](../challenge/schemas.py).
+* I also updated the [`api.py`](../challenge/schemas.py) to serve the model as required using fast api.
+* With this configuration the api works fine locally and the 4 tests are passed.
