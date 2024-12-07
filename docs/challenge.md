@@ -46,3 +46,9 @@ so I decided to change the [`test_model.py`](../tests/model/test_model.py) addin
 * In order to configure the api I defined the file [`schemas.py`](../challenge/schemas.py).
 * I also updated the [`api.py`](../challenge/schemas.py) to serve the model as required using fast api.
 * With this configuration the api works fine locally and the 4 tests are passed.
+
+# Api Dockerization
+
+* Since I am using python3.12 locally, in order to dockerize the API I used python:3.12-slim as base image.
+* I built the image and stored it locally.
+* I updated the [`Dockerfile`](../Dockerfile) so that when I do docker run IMAGE_NAME the API is exposed on port 8080.
